@@ -1,6 +1,7 @@
 pipeline {
     agent {
         label 'docker-maven-slave'
+        image 'maven:3-alpine'
     }
     stages {
         stage('Build') {
