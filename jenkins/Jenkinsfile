@@ -7,6 +7,7 @@ pipeline {
             steps {
                 sh 'echo Hello World'
                 sh 'docker -v'
+                sh 'mvn -v'
 //                 sh 'mvn -B -DskipTests clean package'
             }
         }
